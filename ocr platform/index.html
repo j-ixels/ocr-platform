@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR Platform</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="OCR Platform Logo" style="width: auto; height: 80px; max-width: 100%; ">
+        
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                
+                <li><a href="#container">Upload</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="background">
+    <section id="hero">
+        <h1>Convert Images to Text with Ease</h1>
+        <p>Upload an image, and let our OCR platform do the rest.</p>
+        <a href="#container"><button id="get-started">Get Started</button></a>
+</section>
+
+
+<div class="container" id="container">
+        <h1>OCR Platform</h1>
+        <h2>Upload your Image</h2>
+        <input type="file" id="imageInput" accept="image/*" multiple>
+        <div id="imagePreview"></div>
+        <button id="extractTextBtn">Extract Text</button>
+        <div id="extractedText"></div>
+        <button id="downloadTextBtn" style="display: none;">Download Text</button>
+        
+    </div>
+    <div id="status"></div>
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4.0.2/dist/tesseract.min.js"></script>
+    <script src="javascript/script.js"></script>
+
+
+    <footer id="footer">
+        <p>&copy; 2024 Your OCR Platform. All Rights Reserved.</p>
+        <div id="social-media">
+          <a href="https://facebook.com" target="_blank">Facebook</a>
+          <a href="https://twitter.com" target="_blank">Twitter</a>
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+      </footer>
+    </div>
+</body>
+</html>
